@@ -18,12 +18,12 @@ Open `index.html` in a browser, or serve the folder:
 python3 -m http.server 8000
 ```
 
-## Before publishing
+## Keeping it current
 
-- `index.html` — replace `YOUR-LINKEDIN-HANDLE` in the LinkedIn link.
-- `assets/headshot.svg` — placeholder portrait. Drop in a real photo and point
-  the `<img>` in `index.html` at it.
-- `assets/leon-liu-resume.pdf` — replace with the current résumé when it changes.
+- `assets/leon-liu-resume.pdf` — swap in a new export when the résumé changes,
+  and check the dates and figures in `index.html` still match it.
+- `assets/headshot.jpg` — square crop, 416×416. Replace in place to change the
+  portrait; no markup change needed.
 
 ## Deploying
 
