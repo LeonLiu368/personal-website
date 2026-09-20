@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leon Liu</title>
+<meta name="description" content="Leon Liu — computer science student at Carnegie Mellon University working on AI agent evaluation, developer tooling, and full-stack products.">
+<meta name="author" content="Leon Liu">
+<meta property="og:title" content="Leon Liu">
+<meta property="og:description" content="Computer science student at Carnegie Mellon working on AI agent evaluation, developer tooling, and full-stack products.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script>
+  // Applied before first paint so the correct theme renders immediately.
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      if (stored === 'light' || stored === 'dark') {
+        document.documentElement.setAttribute('data-theme', stored);
+      }
+    } catch (e) { /* storage blocked — fall back to the OS setting */ }
+  })();
+</script>
+</head>
+<body>
+
+<button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">
+  <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="4"></circle>
+    <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+  </svg>
+  <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"></path>
+  </svg>
+</button>
+
+<main class="page">
+
+  <header class="intro">
+    <!-- Replace with your own photo: drop it in assets/ and update this src. -->
+    <img class="avatar" src="assets/headshot.svg" alt="Portrait of Leon Liu" width="104" height="104">
+    <div class="intro-body">
+      <h1>Leon Liu</h1>
+      <p class="tagline">Computer science student at Carnegie Mellon. I build evaluation infrastructure for AI agents, and full-stack products that people actually use.</p>
+      <p class="now"><span class="now-dot" aria-hidden="true"></span>Currently a software engineering intern at <strong>Abundant&nbsp;(YC&nbsp;F24)</strong> in San Francisco.</p>
+      <ul class="links">
+        <li><a href="mailto:leonliu509@gmail.com">Email</a></li>
+        <li><a href="https://github.com/LeonLiu368" target="_blank" rel="noopener">GitHub</a></li>
+        <!-- TODO: replace with your LinkedIn URL -->
+        <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="assets/leon-liu-resume.pdf" target="_blank" rel="noopener">Résumé</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="section" id="experience">
+    <h2>Experience</h2>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Software Engineer Intern <span class="at">·</span> <span class="org">Abundant (YC F24)</span></h3>
+        <p class="meta">San Francisco, CA <span class="sep">·</span> June 2026 – Present</p>
+      </div>
+      <ul>
+        <li>Build multi-service benchmark environments that evaluate coding agents on realistic, production-like software instead of toy repositories.</li>
+        <li>Designed 500+ evaluation tasks spanning CLI and MCP tool use, container builds, and live Kubernetes monitoring, delivered to major model labs.</li>
+        <li>Wrote reusable automation skills and CI checks that harden model quality-assurance loops and speed up iteration on long-horizon tasks.</li>
+        <li>Migrated off a legacy observability platform and retired deprecated endpoints, cutting experiment run costs by roughly 40%.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Software Engineer Intern <span class="at">·</span> <span class="org">Wayhome</span></h3>
+        <p class="meta">Remote <span class="sep">·</span> January 2026 – Present</p>
+      </div>
+      <ul>
+        <li>Built an AI-driven listing system for midterm rentals in Ruby on Rails, automating listing copy and image analysis to cut manual setup work substantially.</li>
+        <li>Engineered a mobile photo-coaching pipeline in React Native that streams parallel vision-model calls over SSE, backed by a Swift ARKit bridge for on-device framing guidance.</li>
+        <li>Shipped a waitlist and email distribution pipeline on Sidekiq-Cron for a controlled launch to the first 100+ users.</li>
+        <li>Introduced an internal testing endpoint adopted by the 12-person team, making in-development AI features far cheaper to exercise step by step.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Undergraduate Research Assistant <span class="at">·</span> <span class="org">Carnegie Mellon University</span></h3>
+        <p class="meta">Pittsburgh, PA <span class="sep">·</span> October 2025 – Present</p>
+      </div>
+      <ul>
+        <li>Study the reasoning, planning, and tool-use behavior of LLM agents on multi-step tasks using the OpenHands framework.</li>
+        <li>Built Python evaluation pipelines measuring how agent robustness and failure modes shift as the observation format changes — screenshots, DOM, accessibility tree.</li>
+        <li>Collected and analyzed the experimental data behind a NeurIPS submission.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Software Developer &amp; Technical Lead <span class="at">·</span> <span class="org">ScottyLabs</span></h3>
+        <p class="meta">Pittsburgh, PA <span class="sep">·</span> January 2026 – Present</p>
+      </div>
+      <ul>
+        <li>Lead a 10+ person engineering and design team maintaining CMU's official Lost &amp; Found platform, used by 16K+ students.</li>
+        <li>Completed a migration stalled for three years, cutting page load times roughly 6× and trimming hosting costs.</li>
+        <li>Hardened the submission and moderation workflow with role-based access guards and schema validation, cutting invalid submissions by about 20%.</li>
+        <li>Work directly with university stakeholders on policy and UX changes affecting 5K+ weekly users.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <article class="project">
+        <h3>String</h3>
+        <p>A full-stack meetup discovery platform with geolocation-based plan ranking, phone OTP auth, and in-app chat. Handles concurrent matchmaking with serializable transactions and row-level locking, and runs the plan lifecycle — expiry, completion, cooldowns — on background worker queues.</p>
+        <p class="stack">Next.js · TypeScript · Express · PostgreSQL · Prisma · Redis</p>
+      </article>
+
+      <article class="project">
+        <h3>Panopticon</h3>
+        <p>A real-time emergency dispatch platform that simulates live unit coordination, combining geospatial routing with natural-language command parsing. Unit assignment is optimized against distance, severity, and availability heuristics.</p>
+        <p class="stack">React · Flask · Python</p>
+        <p class="project-links"><a href="https://github.com/LeonLiu368/panopticon" target="_blank" rel="noopener">Source</a></p>
+      </article>
+
+      <article class="project">
+        <h3>Page-By-Page</h3>
+        <p>A research discovery platform that ingests academic papers and generates LLM summaries with personalized recommendations, making dense technical work approachable without reading every page.</p>
+        <p class="stack">React · Tailwind CSS · Flask · PostgreSQL</p>
+        <p class="project-links"><a href="https://github.com/BucketofJava/page-by-page-public" target="_blank" rel="noopener">Source</a></p>
+      </article>
+
+      <article class="project">
+        <h3>Binder</h3>
+        <p>The operations app behind Carnegie Mellon's annual Spring Carnival, used by 70+ coordinators during the event. Interactive admin tables with live client-side countdowns and safe teardown on navigation keep it stable through peak hours.</p>
+        <p class="stack">Ruby on Rails · Stimulus · SQLite · Docker</p>
+        <p class="project-links"><a href="https://binder.springcarnival.org/" target="_blank" rel="noopener">Live site</a></p>
+      </article>
+
+    </div>
+    <p class="more">More on <a href="https://github.com/LeonLiu368" target="_blank" rel="noopener">GitHub</a>.</p>
+  </section>
+
+  <section class="section" id="education">
+    <h2>Education</h2>
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Carnegie Mellon University</h3>
+        <p class="meta">Pittsburgh, PA <span class="sep">·</span> Expected May 2028</p>
+      </div>
+      <p class="plain">Bachelor of Science in Computer Science · GPA 3.9 / 4.0</p>
+    </article>
+  </section>
+
+  <section class="section" id="leadership">
+    <h2>Leadership</h2>
+    <ul class="compact">
+      <li><strong>Technical Lead</strong>, ScottyLabs — leads the team behind CMU's Lost &amp; Found platform.</li>
+      <li><strong>Event Coordinator &amp; Website Lead</strong>, SCS Day Planning Committee — ran the site for an event serving 200+ attendees.</li>
+      <li><strong>Team Captain</strong>, Competitive Programming Team — Montverde, FL.</li>
+    </ul>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt>
+      <dd>Python, C, C++, Java, JavaScript, TypeScript, Ruby, SQL</dd>
+      <dt>Frameworks</dt>
+      <dd>React, Next.js, React Native, Flask, Ruby on Rails, Express, FastAPI</dd>
+      <dt>Infrastructure</dt>
+      <dd>PostgreSQL, Prisma, Redis, Docker, Kubernetes, AWS, Vercel, GitHub Actions</dd>
+    </dl>
+  </section>
+
+  <footer class="footer">
+    <p>Pittsburgh, PA · <a href="mailto:leonliu509@gmail.com">leonliu509@gmail.com</a></p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

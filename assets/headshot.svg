@@ -1,0 +1,7 @@
+<!-- Placeholder portrait. Replace with a real photo (assets/headshot.jpg) and
+     update the <img src> in index.html. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 104" width="104" height="104" role="img" aria-label="Placeholder portrait">
+  <rect width="104" height="104" fill="#eef3f8"/>
+  <circle cx="52" cy="41" r="16" fill="#c3d4e4"/>
+  <path d="M20 104c0-19 14.3-31 32-31s32 12 32 31z" fill="#c3d4e4"/>
+</svg>
