@@ -1,0 +1,21 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "page",
+  "theme": "studio",
+  "genre": "editorial",
+  "shape": "Marquee Hero",
+  "hero": "Ledge",
+  "nav": "edge-aligned bar",
+  "footer": "mast",
+  "signature": "wordmark under construction",
+  "sections": [
+   "Rows",
+   "Grid",
+   "Band",
+   "Columns"
+  ],
+  "date": "2026-10-29"
+ }
+]
